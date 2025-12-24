@@ -1,0 +1,34 @@
+TEST CASE 1
+Input: Name = Priya, Marks = 95
+Expected Grade: A
+Result: Pass
+
+TEST CASE 2
+Input: Name = Rahul, Marks = 85
+Expected Grade: B
+Result: Pass
+
+TEST CASE 3
+Input: Name = Ananya, Marks = 75
+Expected Grade: C
+Result: Pass
+
+TEST CASE 4
+Input: Name = Kiran, Marks = 65
+Expected Grade: D
+Result: Pass
+
+TEST CASE 5
+Input: Name = Sneha, Marks = 45
+Expected Grade: F
+Result: Pass
+
+TEST CASE 6
+Input: Marks = -10
+Expected Output: Invalid Input Message
+Result: Pass
+
+TEST CASE 7
+Input: Marks = 120
+Expected Output: Invalid Input Message
+Result: Pass
