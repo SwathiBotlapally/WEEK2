@@ -1,29 +1,29 @@
-# 🎓 Student Grade Calculator (Python)
+# 🎓 Student Grade Calculator
 
-This is a simple Python project for beginners to understand:
-
-- If-else statements  
-- Functions  
-- Loops (optional)  
-- Basic error handling  
-
-It asks the user to enter marks (0–100) and calculates the grade with a motivational message.
+## 📌 Project Description
+This project is a Python-based Student Grade Calculator that takes student marks as input and assigns grades (A, B, C, D, F) with encouraging messages.
 
 ---
 
-## 💡 Features
-
-✔ Calculates Grade (A, B, C, D, F)  
-✔ Gives encouraging message for each grade  
-✔ Handles invalid inputs  
-✔ Beginner-friendly code with comments  
+## 🛠️ Technical Requirements
+- Python 3.x
+- if-elif-else statements
+- Functions
+- Input validation (0–100)
+- while loop for error handling
 
 ---
 
-## 🧑‍💻 How to Run
+## 📝 Grading Logic
+- A: 90–100
+- B: 80–89
+- C: 70–79
+- D: 60–69
+- F: 0–59
 
-1. Install Python 3  
-2. Download this project folder  
-3. Open terminal / command prompt  
-4. Run:
+---
 
+## ▶️ How to Run
+1. Open terminal or command prompt
+2. Navigate to project folder
+3. Run:
