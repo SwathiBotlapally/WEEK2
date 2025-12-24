@@ -1,40 +1,39 @@
-# WEEK2
 # Student Grade Calculator
-# Week 2 Project - Python Basics
+# Author: Swathi
+# Description: Calculates student grade based on marks with validation
 
 def calculate_grade(marks):
-    """Returns grade and message based on marks."""
-    if marks >= 90:
-        return "A", "Excellent work! Keep shining! 🌟"
-    elif marks >= 80:
-        return "B", "Great job! You're doing really well! 👍"
-    elif marks >= 70:
-        return "C", "Good effort! Keep practicing! 🙂"
-    elif marks >= 60:
-        return "D", "You passed, but there's room for improvement! 💪"
+    """Returns grade and message based on marks"""
+    if 90 <= marks <= 100:
+        return "A", "Excellent work! Keep shining 🌟"
+    elif 80 <= marks <= 89:
+        return "B", "Very Good! Keep it up 👍"
+    elif 70 <= marks <= 79:
+        return "C", "Good effort! You can do even better 😊"
+    elif 60 <= marks <= 69:
+        return "D", "You passed. Keep practicing 💪"
     else:
-        return "F", "Don't worry! Keep trying, and you'll improve! 🚀"
+        return "F", "Don't give up! Work harder next time 🚀"
 
-def main():
-    print("📘 Student Grade Calculator")
-    print("------------------------------")
 
+# Main Program
+print("🎓 STUDENT GRADE CALCULATOR 🎓")
+
+student_name = input("Enter student name: ")
+
+while True:
     try:
-        marks = float(input("Enter your marks (0-100): "))
-
-        # Basic error handling
-        if marks < 0 or marks > 100:
-            print("❗ Please enter marks between 0 and 100.")
-            return
-
-        grade, message = calculate_grade(marks)
-
-        print("\n🎓 Your Grade:", grade)
-        print("💬 Message:", message)
-
+        marks = int(input("Enter marks (0-100): "))
+        if 0 <= marks <= 100:
+            break
+        else:
+            print("❌ Invalid marks! Please enter marks between 0 and 100.")
     except ValueError:
-        print("❗ Invalid input! Please enter numbers only.")
+        print("❌ Please enter numeric values only.")
 
-# Program execution starts here
-if __name__ == "__main__":
-    main()
+grade, message = calculate_grade(marks)
+
+print("\n📊 RESULT FOR", student_name.upper())
+print(f"Marks: {marks}/100")
+print(f"Grade: {grade}")
+print(f"Message: {message}")
